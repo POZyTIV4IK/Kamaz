@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geolocation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="wrap">
+        <div id="map">
+        </div>
+        <div id="floating-panel">
+            <button id="Start" onclick="start()" class = "button" style="font-size : 30px;">Start</button>
+            <button id="Stop" onclick="stop()" class = "button" style="font-size : 30px;">Stop</button>
+            <input class="input" type="range" id="rangeik" min="0" max="360">
+            <ul class="geotype">
+            <li><input class="radio-button" type="radio" id="radio-virtual" name="radio"  value="virtual" id="virtual" checked>
+              <label for="virtual">Virtual</label>
+            </li>
+            <li><input class="radio-button" type="radio" id="radio-real" name="radio"  value="real" id="real">
+            <label for="real">Real</label>
+          </li>
+          </ul>
+
+          <ul class="placetype">
+          <li><input class="radio-button" type="radio" id="radio-finish" name="place"  value="finish" id="finish" checked>
+            <label for="finish">Finish</label>
+          </li>
+          <li><input class="radio-button" type="radio" id="radio-between" name="place"  value="between" id="between">
+          <label for="between">Between</label>
+        </li>
+        </ul>
+
+      </div>
+        <script src="script.js"></script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtPMsFHoNPKJ6mG93xzw61ExUOaGvxWh4&callback=initMap">
+        </script>
+    </body>
+</html>

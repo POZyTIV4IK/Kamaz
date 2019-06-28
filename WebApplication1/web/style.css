@@ -1,0 +1,99 @@
+ /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+             .wrap {
+               width: 100%;
+               height :100%;
+               display: flex;
+               justify-content: space-between;
+               flex-direction: row;
+               align-items: center;
+             }
+            #map {
+                display: flex;
+                width: 75%;
+                height: 100%;
+                border: 5px solid #000000;
+
+            }
+            /* Optional: Makes the sample page fill the window. */
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+
+            }
+            #floating-panel {
+                width: 25%;
+                height: 25%;
+                font-family: 'Roboto','sans-serif';
+                line-height: 0px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .button{
+                height:50px;
+                width:150px;
+                transition-duration: 0.5s;
+                background: none;
+                border: 2px solid #000000;
+            }
+            .button:hover {
+                color: white;
+                background: #000000;
+                opacity: 0.7;
+            }
+
+            .button:active {
+                color: white;
+                background: #000000;
+                opacity: 1;
+            }
+
+            .input[type=range] {
+  -webkit-appearance: none;
+  width: 75%;
+  border-radius: 20px;
+  height: 7px;
+  border: 1px solid #bdc3c7;
+  background-color: #089765;
+    outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.geotype {
+  display :flex;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.placetype {
+  display :flex;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.radio-button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+
+}
